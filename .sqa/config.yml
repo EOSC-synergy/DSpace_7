@@ -1,12 +1,12 @@
 config:
   project_repos:
-    myrepo:
-      repo: 'https://github.com/EOSC-synergy/DSpace.git'
+    dspace_7:
+      repo: 'https://github.com/EOSC-synergy/DSpace_7.git'
 
 sqa_criteria:
   qc_coverage:
     repos:
-      myrepo:
+      dspace_7:
         container: dspace-testing
         commands:
           - mvn -X -f /dspace-testing/pom.xml checkstyle:check
