@@ -141,7 +141,7 @@ services:
       grep -R dspace_7
       /FAIR_eva/start.sh      
   dspace_ds:
-    container_name: dspace-inges
+    container_name: dspace-ingest
     image: "${DOCKER_OWNER:-dspace}/dspace:${DSPACE_VER:-dspace-7_x-ingest}"
     build:
       context: .
