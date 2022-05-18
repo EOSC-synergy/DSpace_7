@@ -8,3 +8,12 @@ services:
      - type: bind
        source: ./
        target: /dspace-testing
+  qc.fair_snazzy-malachite-quoll:
+    build:
+      context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.FAIR
+      dockerfile: Dockerfile
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
