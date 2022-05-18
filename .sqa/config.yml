@@ -1,7 +1,12 @@
 config:
   project_repos:
-    dspace_7:
-      repo: 'https://github.com/EOSC-synergy/DSpace_7.git'
+    credentials: []
+    project_repos:
+      github.com/EOSC-synergy/sqaaas-tooling:
+        branch: release/1.1.0
+        repo: https://github.com/EOSC-synergy/sqaaas-tooling
+      dspace_7:
+        repo: 'https://github.com/EOSC-synergy/DSpace_7.git'
 
 sqa_criteria:
   qc_coverage:
