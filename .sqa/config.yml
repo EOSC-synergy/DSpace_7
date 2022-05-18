@@ -1,8 +1,5 @@
 config:
   project_repos:
-    github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.1.0
-      repo: https://github.com/EOSC-synergy/sqaaas-tooling
     dspace_7:
       repo: 'https://github.com/EOSC-synergy/DSpace_7.git'
 
@@ -13,14 +10,6 @@ sqa_criteria:
         container: dspace-testing
         commands:
           - mvn -X -f /dspace-testing/pom.xml checkstyle:check
-  QC.FAIR:
-    repos:
-      this_repo:
-        commands:
-        - fair-eva.py -ID 123456789/24 -R dspace7
-          -B https://b2share.eudat.eu/api/oai2d --tool_endpoint http://dspace-fair:9090/v1.0/rda/rda_all
-        container: qc.fair_snazzy-malachite-quoll
-
 environment:
   GIT_COMMITTER_NAME: Fernando
   GIT_COMMITTER_EMAIL: aguilarf@ifca.unican.es
